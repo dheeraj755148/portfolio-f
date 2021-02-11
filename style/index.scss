@@ -1,6 +1,9 @@
 body {
     background-color: black !important;
 }
+.preloader-stuff{
+    transition: none !important;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -106,6 +109,7 @@ nav {
             color: #fff;
             text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff1e56, 0 0 0.5em #ff1e56, 0 0 0.1em #ff1e56, 0 10px 3px #000;
             animation: blink linear 3s;
+            animation-delay: 0.5s;
         }
     }
     svg {
@@ -342,7 +346,7 @@ nav {
     }
 }
 #contact {
-    height: 80vh;
+    height: 85vh;
     margin-top: 5%;
     .heading-titles {
         font-family: "Spartan", sans-serif;
@@ -491,6 +495,7 @@ nav {
 }
 
 @keyframes blink {
+
     78% {
         color: inherit;
         text-shadow: inherit;
@@ -527,6 +532,12 @@ nav {
     #about {
         .inner-material {
             font-size: 100%;
+        }
+    }
+    nav{
+        z-index: 100;
+        .nav-link{
+            margin-top: 3%;
         }
     }
 }

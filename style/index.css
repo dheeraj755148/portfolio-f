@@ -2,6 +2,11 @@ body {
   background-color: black !important;
 }
 
+.preloader-stuff {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -133,6 +138,8 @@ nav .custom-toggler.navbar-toggler {
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff1e56, 0 0 0.5em #ff1e56, 0 0 0.1em #ff1e56, 0 10px 3px #000;
   -webkit-animation: blink linear 3s;
           animation: blink linear 3s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 #home svg {
@@ -403,7 +410,7 @@ nav .custom-toggler.navbar-toggler {
 }
 
 #contact {
-  height: 80vh;
+  height: 85vh;
   margin-top: 5%;
   /*     .submission {
         margin-left: 0%;
@@ -647,6 +654,12 @@ nav .custom-toggler.navbar-toggler {
 @media screen and (max-width: 1000px) {
   #about .inner-material {
     font-size: 100%;
+  }
+  nav {
+    z-index: 100;
+  }
+  nav .nav-link {
+    margin-top: 3%;
   }
 }
 
