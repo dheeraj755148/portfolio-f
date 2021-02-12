@@ -670,6 +670,9 @@ nav .custom-toggler.navbar-toggler {
   #about img {
     width: 50%;
   }
+  #contact {
+    height: 103vh;
+  }
   #contact svg {
     display: none;
   }
