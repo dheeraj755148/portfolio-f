@@ -5,10 +5,24 @@ body {
 .preloader-stuff {
   -webkit-transition: none !important;
   transition: none !important;
+  -webkit-animation: none !important;
+          animation: none !important;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ff1e56 !important;
+}
+
+body::-webkit-scrollbar-track {
+  background: #444444;
 }
 
 #loader {
