@@ -85,6 +85,109 @@ nav .custom-toggler.navbar-toggler {
   outline: none;
 }
 
+nav .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #302f2f;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav .overlay a {
+  font-family: "Spartan", sans-serif;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+nav .overlay .main-content-hidden:hover,
+nav .overlay .main-content-hidden:focus {
+  background-color: #3f3d3d;
+  color: white;
+}
+
+nav .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #818181;
+}
+
+nav .overlay .closebtn:hover {
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  nav .overlay a {
+    font-size: 20px;
+  }
+  nav .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+nav .custom-toggler {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .custom-toggler:hover {
+  cursor: pointer;
+}
+
+nav .custom-toggler .icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+}
+
+@media (max-width: 992px) {
+  nav .custom-off {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .custom-toggler {
+    display: none;
+  }
+}
+
 #home .title-effect {
   font-family: "Spartan", sans-serif;
   font-style: normal;
