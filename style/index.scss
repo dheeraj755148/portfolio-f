@@ -608,7 +608,7 @@ nav {
   }
   #home {
     .logo-mark {
-      display: none;
+      display: none !important;
     }
   }
 }

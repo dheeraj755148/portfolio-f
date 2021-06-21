@@ -735,7 +735,7 @@ nav .custom-toggler .icon-bar {
     margin-top: 3%;
   }
   #home .logo-mark {
-    display: none;
+    display: none !important;
   }
 }
 
