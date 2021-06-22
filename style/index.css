@@ -406,8 +406,12 @@ nav .custom-toggler .icon-bar {
 }
 
 #projects .project-list .content-details .extra-contents a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+#projects .project-list .content-details .extra-contents a svg:hover path {
+  fill: #FF1E56;
 }
 
 #projects .project-list .content:hover .content-details {

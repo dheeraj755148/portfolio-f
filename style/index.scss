@@ -336,7 +336,14 @@ nav {
         a {
           margin: 10px;
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.15);
+          }
+          svg{
+            &:hover{
+              path{
+                fill: #FF1E56;
+              }
+            }
           }
         }
       }
