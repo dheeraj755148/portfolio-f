@@ -240,7 +240,10 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 project-list" data-aos="fade-up">
             <div class="content">
-              <img class="content-image" src="./image/anime.gif">
+              <video class="content-image" src="./image/animeplex.m4v" autoplay muted loop>
+                <source src="./image/animeplex.m4v">
+              </video>
+
               <div class="content-details fadeIn-top">
                 <div class="extra-contents">
                   <a href="https://github.com/dheeraj755148/search_app">
@@ -275,7 +278,9 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 project-list" data-aos="fade-up">
             <div class="content">
-              <img class="content-image" src="./image/pokedex.gif">
+              <video class="content-image" src="./image/pokedex-final.m4v" autoplay muted loop>
+                <source src="./image/pokedex-final.m4v">
+              </video>
               <div class="content-details fadeIn-top">
                 <div class="extra-contents">
                   <a href="https://github.com/dheeraj755148/Pokemon">
@@ -345,7 +350,9 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 project-list" data-aos="fade-up">
             <div class="content">
-              <img class="content-image" src="./image/tic.gif">
+              <video class="content-image" autoplay muted loop>
+                <source src="./image/tic.m4v">
+              </video>
               <div class="content-details fadeIn-top">
                 <div class="extra-contents">
                   <a href="https://github.com/dheeraj755148/tic-tac">
@@ -532,6 +539,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      document.querySelectorAll('.content-image').play()
     </script>
   </body>
 
